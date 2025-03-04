@@ -16,7 +16,7 @@ module apb_slave (
 );
 
   // Slave memory (16 registers x 32 bits)
-  logic [31:0] registers[16];
+  logic [15:0] [31:0] registers;
   
   // Internal signals
   logic [3:0] addr_index;
